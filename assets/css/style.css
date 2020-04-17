@@ -1,0 +1,35 @@
+body {
+    margin: 10px 30px 10px 30px;
+    overflow: hidden;
+}
+
+body .top-navigation {
+    width: 100%;
+}
+
+.top-navigation .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+}
+
+.top-navigation .links .link {
+    margin: 0 2px 0 2px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-container .section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+footer {
+
+}
