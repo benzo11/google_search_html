@@ -2,55 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Google</title>
-    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<title>Google</title>
+	<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png">
 </head>
 
 <body class="main-container">
-    <header class="top-navigation">
-        <div class="links">
-            <a class="link" href="#">Gmail</a>
-            <a class="link" href="#">Slike</a>
-            <a class="link google-applications" href="#">Googlove aplikacije</a>
-            <a class="link my-profile" href="#">Moj profil</a>
-        </div>
-    </header>
-    <div role="main" class="search-container">
-        <form class="section search-form">
-            <div class="icon-search"></div>
-            <input type="text" name="search">
-            <div class="icon-container">
-                <div class="icon-keyboard"></div>
-                <div class="icon-microphone"></div>
-            </div>
-        </form>
-        <div class="section buttons-container">
-            <button class="button-primary">Iskanje google</button>
-            <button class="button-primary">Klik na srečo</button>
-        </div>
-        <div class="section">Google je na voljo: <a href="#">English</a></div>
-    </div>
+<header class="top-navigation">
+	<div class="links">
+		<a class="link" href="#">Gmail</a>
+		<a class="link" href="#">Slike</a>
+		<a class="link google-applications" href="#">
+			<img src="assets/images/icon%20applications%20google.png">
+		</a>
+		<a class="link my-profile" href="#">
+			<img src="assets/images/myprofile.png">
+		</a>
+	</div>
+</header>
+<div role="main" class="search-container">
+	<div class="image-container">
+		<a target="_blank" href="https://google.com/search?q=Koronavirus:+hvala+vsem,+ki+pomagate">
+			<img src="assets/images/thank-you-coronavirus-helpers-6753651837108764.4-law.gif">
+		</a>
+	</div>
+	<div class="section form-container">
+		<form class="search-form" action="page2.html">
+			<div class="icon icon-search">
+				<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+				</svg>
+			</div>
+			<input type="text" name="search">
+			<div class="icon-container">
+				<div class="icon icon-keyboard">
+					<img src="assets/images/tia.png">
+				</div>
+				<div class="icon icon-microphone">
+					<img src="assets/images/googlemic_color_24dp.png">
+				</div>
+			</div>
+		</form>
+	</div>
 
-    <footer>
-        <div class="country-container">
-            <div class="country">Slovenija</div>
-        </div>
-        <div class="footer-links-container links">
-            <div class="links-left">
-                <a href="#">Oglaševanje</a>
-                <a href="#">Posel</a>
-                <a href="#">Predstavitev</a>
-                <a href="#">Kako deluje Google</a>
-            </div>
-            <div class="links-right">
-                <a href="#">Zasebnost</a>
-                <a href="#">Pogoji</a>
-                <a href="#">Nastavitve</a>
-            </div>
+	<div class="section buttons-container">
+		<button class="button-primary">Iskanje google</button>
+		<button class="button-primary">Klik na srečo</button>
+	</div>
+</div>
 
-        </div>
-    </footer>
+<footer>
+	<div class="wrapper">
+		<div class="country-container">
+			<div class="country">Slovenija</div>
+		</div>
+		<div class="footer-links-container links">
+			<div class="links-left">
+				<a href="#">Oglaševanje</a>
+				<a href="#">Posel</a>
+				<a href="#">Predstavitev</a>
+				<a href="#">Kako deluje Iskanje Google</a>
+			</div>
+			<div class="links-right">
+				<a href="#">Zasebnost</a>
+				<a href="#">Pogoji</a>
+				<a href="#">Nastavitve</a>
+			</div>
+
+		</div>
+	</div>
+</footer>
 </body>
 
 </html>

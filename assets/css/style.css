@@ -1,35 +1,208 @@
+html, body {
+	height: 100%;
+	font-family: arial, sans-serif;
+	margin: 0;
+}
+
+footer {
+	background-color: #F2F2F2;
+}
+
+footer, .top-navigation {
+	font-size: 14px;
+}
+
 body {
-    margin: 10px 30px 10px 30px;
-    overflow: hidden;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 body .top-navigation {
-    width: 100%;
+	width: 100%;
 }
 
 .top-navigation .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    float: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 15px;
+	padding-right: 25px;
 }
 
 .top-navigation .links .link {
-    margin: 0 2px 0 2px;
+	padding-left: 15px;
+	color: rgba(0, 0, 0, 0.87);
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.top-navigation .links .link:hover {
+	text-decoration: underline;
+}
+
+.top-navigation .links .google-applications img {
+	width: 16px;
+}
+
+.top-navigation .links .my-profile img {
+	width: 32px;
+	border-radius: 50%;
 }
 
 .search-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin-top: -15rem;
 }
 
-.search-container .section{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.search-container .search-form {
+	border-radius: 24px;
+	border: 1px solid #DFE1E5;
+	height: 41px;
+	width: 35rem;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: 5px;
+	padding-left: 5px;
 }
-footer {
 
+.search-container .search-form:hover {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+	border-color: rgba(223, 225, 229, 0);
+}
+
+.search-container .search-form input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	height: 100%;
+	font-size: 16px;
+}
+
+.search-container .search-form input:focus {
+	outline: none;
+}
+
+.search-container .search-form .icon-search,
+.search-container .search-form .icon-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.search-container .search-form .icon-search svg {
+	fill: #9AA0A6;
+	width: 100%;
+}
+
+
+.search-container .search-form .icon {
+	width: 24px;
+	height: 24px;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.search-container .search-form .icon:hover {
+	cursor: pointer;
+}
+
+.search-container .search-form .icon img {
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.search-container .section {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.search-container .image-container {
+	margin: 0 auto;
+}
+
+.search-container .image-container img {
+	max-width: 100%;
+	width: 430px;
+}
+
+footer .wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+footer .wrapper > div {
+	height: 40px;
+	display: flex;
+	margin-left: 27px;
+	margin-right: 27px;
+	position: relative;
+	align-items: center;
+}
+
+footer .wrapper > div:before {
+	content: '';
+	position: absolute;
+	border-top: 1px solid #E4E4E4;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	top: 0;
+}
+
+footer .country {
+	color: rgba(0, 0, 0, .54);
+	font-size: 15px;
+}
+
+footer .footer-links-container {
+	justify-content: space-between;
+
+}
+
+footer .footer-links-container a {
+	color: #5F6368;
+	text-decoration: none;
+	margin-left: 27px;
+}
+
+footer .footer-links-container a:hover {
+	border-bottom: 1px solid #5F6368;
+}
+
+footer .footer-links-container a:first-child {
+	margin-left: 0;
+}
+
+button {
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+	color: #5F6368;
+	font-size: 14px;
+	padding: 0 16px;
+	margin: 11px 4px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+button:hover {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	color: #222;
 }
